@@ -12,7 +12,8 @@ func main() {
 	// uncomment line below if you don't want to see date and time in the logs
     // log.SetFlags(0)
 	
-    message, err := greetings.Hello("G-Man")
+	names := []string{"Gladys", "Samantha", "Darrin"}
+    message, err := greetings.Hellos(names)
 	if err != nil {
 		log.Fatal(err)
 	}
