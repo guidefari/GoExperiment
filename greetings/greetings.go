@@ -12,6 +12,7 @@ func Hello(name string) (string, error) {
 		return "", errors.New("gimme a name bro")
 	}
 
+    // message := fmt.Sprintf(randomFormat(), name)
     message := fmt.Sprintf(randomFormat(), name)
     return message, nil
 }
